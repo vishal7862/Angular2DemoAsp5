@@ -1,9 +1,15 @@
-﻿import {Component} from 'angular2/core';
+﻿
+
+import {Component} from 'angular2/core';
+import {NgForm}    from 'angular2/common';
+import {UserComponent} from './usercomponent/usercomponent'
+
+
 @Component({
     selector: 'my-app',
-    template: '<h1>{{title}}</h1><h2>{{hero}} details!</h2>'
+    template: '<user></user>',
+    directives:[UserComponent]
 })
 export class AppComponent {
-    public title = 'vishal';
-    public hero = 'Windstorm';
+   
 }

@@ -8,19 +8,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('angular2/core');
-var usercomponent_1 = require('./usercomponent/usercomponent');
-var AppComponent = (function () {
-    function AppComponent() {
+var UserComponent = (function () {
+    function UserComponent() {
     }
-    AppComponent = __decorate([
+    UserComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<user></user>',
-            directives: [usercomponent_1.UserComponent]
+            selector: 'user',
+            templateUrl: '/templates/UserForm.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], UserComponent);
+    return UserComponent;
 })();
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.js.map
+exports.UserComponent = UserComponent;
+//# sourceMappingURL=usercomponent.js.map
